@@ -142,20 +142,30 @@ body {
     position: relative;
 }
 
+.header .logo-box {
+    height: 72px;
+    padding: 10px 0;
+}
+
 .header .logo {
     color: var(--main-color);
     font-size: 26px;
     font-weight: bold;
-    height: 72px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+}
+
+.header .logo-box span {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
 }
 
 @media (max-width:767px) {
-    .header .logo {
+    .header .logo-box {
         width: 100%;
         height: 50px;
+        text-align: center;
     }
 }
 
